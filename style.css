@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/dm-sans-v11-latin_latin-ext-regular.ttf);
+}
+@font-face {
+    font-family: "PP woodland";
+    src: url(./fonts/PPWoodland-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#page1{
+    
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F7EE;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/209/ALH_Odisej_exterior_aerial_07-scaled-1920x0.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.5vw;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2vw;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0.8vw 3vw;
+}
+#nav #right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vw;
+}
+#right h4{
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 0.5vw 2vw;
+    font-family: DM Sans;
+    z-index: 9;
+    /* background-color: red; */
+}
+
+#rightone{
+    width: fit-content;
+    height: fit-content;
+    border: 0.2vw solid #64704F;
+    border-radius: 100px;
+    overflow: hidden;
+    
+}
+#righttwo{
+    color: #F7F7EE;
+    background-color: #434B34;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 0.2vw solid #434B34;
+}
+#left i{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #434B34;
+    cursor: pointer;
+}
+#full{
+    width:40%;
+    height: 100vh;
+    background-color: #e3e3c47a;
+    position: absolute;
+    top: 0%;
+    left:-40%;
+    /* border-radius: 0px 50px 50px 0px; */
+    backdrop-filter: blur(10px);
+    padding: 5vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#full h4{
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: PP woodland;
+    color: black;
+}
+#full i{
+    font-size: 4vw;
+    font-weight: 500;
+    position: absolute;
+    top:4%;
+    left: 5%;
+    color: #64704F;
+    cursor: pointer;
+}
+#container1{
+    width: 100%;
+    height: 3vw;
+    text-align: center;
+    font-family: PP woodland;
+    /* background-color: red; */
+    /* margin-top: 0.3vw; */
+    line-height: 4vw;
+    color: #434B34;
+}
+#container1 h2{
+    font-size: 4.5vw;
+    font-weight: 500;
+}
+#container1 h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #64704F;
+    padding: 3vw;
+}
+#page2 h1{
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: PP woodland;
+    line-height: 4.8vw;
+    color: #434B34;
+    font-weight: 500;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F7EE;
+    padding: 2.4vw;
+}
+#page3 #above{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    font-family: PP woodland;
+    padding-top: 2vw;
+    line-height: 5vw;
+    /* background-color: red; */
+}
+#above h1{
+    font-size: 4.5vw;
+    color: #E3E3C4;
+    font-weight: 500;
+}
+#bottom{
+    padding: 3vw 5vw;
+    font-family: dm sans;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-between; */
+}
+#bottom-left{
+    width: 40vw;
+    /* background-color: red; */
+}
+#bottom-left h2{
+    font-size: 1vw;
+    font-weight: 500;
+    color: #5F6651;
+}
+#bottom-left-two{
+    margin-top: 2vw;
+    display: flex;
+    gap:2vw;
+    align-items: center;
+}
+#bottom-left-two h3{
+    font-size: 1.7vw;
+    color: #5F6651;
+}
+#icon{
+    background-color: #48503A;
+    width: 3.3vw;
+    height: fit-content;
+    padding: 0.3vw 0.9vw;
+    border-radius: 100px;
+}
+#bottom-left-two i{
+    font-size: 1.5vw;
+    color: white;
+}
+#bottom-left img{
+    margin-top: 3vw;
+    width: 37vw;
+    height:18vw;
+    object-fit: cover;
+    border-radius: 50px;
+}
+#bottom-right{
+    margin-left: 2.4vw;
+
+}
+#bottom-right img{
+    width:43vw;
+    height: 30vw;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+/* Media queries for screens smaller than 600px */
+@media (max-width: 600px) {
+    #nav {
+        height: fit-content;
+        padding: 3vw 4vw;
+    }
+    #nav #right {
+        gap: 3vw;
+    }
+    #right h4 {
+        font-size: 3.5vw;
+        padding: 1vw 4vw;
+    }
+    #left i {
+        font-size: 4.5vw;
+    }
+    
+    #page1 {
+        padding-top: 3vw;
+    }
+
+    #full {
+        width: 80%;
+        left: -80%;
+        padding: 8vw 4vw;
+        gap: 5vw;
+    }
+    #full h4, #full i {
+        font-size: 8vw;
+    }
+    #container1{
+        width: 100%;
+        margin-top: 5vw;
+        height: 3vw;
+        text-align: center;
+        font-family: PP woodland;
+        /* background-color: red; */
+        /* margin-top: 0.3vw; */
+        line-height: 10vw;
+        color: #434B34;
+    }
+
+    #container1 h2 {
+        font-size: 12vw;
+    }
+    #container1 h3 {
+        font-size: 8vw;
+    }
+
+    #page2{
+        width: 100%;
+        height: 100vh;
+        background-color: #64704F;
+        padding: 5vw;
+    }
+    #firsth1{
+        margin-top: 12vh;
+    }
+    #page2 h1{
+        text-align: center;
+        font-size: 5.5vw;
+        font-family: PP woodland;
+        line-height: 4.8vw;
+        color: #434B34;
+        font-weight: 500;
+    }
+    #page2 h1 {
+        font-size: 9vw;
+        line-height: 9.5vw;
+    }
+
+    #page3{
+        width: 100%;
+        height: 100vh;
+        background-color: #F7F7EE;
+        padding: 5vw;
+    }
+    #page3 #above{
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        font-family: PP woodland;
+        padding-top: 2vw;
+        line-height: 5vw;
+        /* background-color: red; */
+    }
+    #above h1 {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+
+    #bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4vw 2vw;
+    }
+    #bottom-left-one{
+        text-align: center;
+    }
+    #bottom-left, #bottom-right {
+        width: 100%;
+    }
+    #bottom-left img, #bottom-right img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #bottom-left h2 {
+        font-size: 3vw;
+    }
+    #bottom-left-two {
+        justify-content: center;
+        /* flex-direction: column; */
+        gap: 1vw;
+    }
+    #bottom-left-two h3 {
+        font-size: 4vw;
+    }
+    #bottom-left-two i{
+        font-size: 6vw;
+        color: white;
+    }
+    #icon {
+        width: 10vw;
+        padding: 2vw;
+        font-size: 4vw;
+    }
+    #imgone{
+        margin-bottom: 3vw;
+    }
+
+    /* Font scaling adjustments for smaller screens */
+    h1, h2, h3, h4 {
+        font-size: 5vw;
+    }
+}
